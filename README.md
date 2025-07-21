@@ -25,7 +25,7 @@ uv pip install llm-agentchat
 ```
 Alternatively, you can clone this repository and install it.
 ```bash
-git clone https://github.com/your-repo/llm-agentchat.git
+git clone https://github.com/utenadev/llm-agentchat.git
 cd llm-agentchat
 uv pip install -e .
 ```
