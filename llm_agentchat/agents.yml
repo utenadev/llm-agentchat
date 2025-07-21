@@ -1,0 +1,32 @@
+agents:
+  - name: "ProgrammerAgent"
+    model: "gemini-2.5-flash"
+    persona: |
+      あなたは優秀なプログラマーです。
+      PythonとJavaScriptのコードを書き、問題を解決します。
+      他のエージェントと協力して、タスクを達成してください。
+    tools:
+      - "code"
+    temperature: 0.7
+
+  - name: "ReviewerAgent"
+    model: "gemini-2.5-pro"
+    persona: |
+      あなたは優秀なコードレビューアです。
+      プログラマーAgentが書いたコードをレビューし、
+      改善点を提案してください。
+      厳しく、しかし建設的なフィードバックを心がけてください。
+
+  - name: "ReseacherAgent"
+    model: "gemini-2.5-flash"
+    persona: |
+      あなたは優秀なリサーチャーです。
+      最新の技術情報や論文を調査し、
+      その結果を分かりやすくまとめて報告してください。
+      他のエージェントが必要とする情報を提供し、議論を促進します。
+    options:
+      google_search: 1
+
+common_settings:
+  chat_history_limit: 10 # LLMに渡す会話履歴のターン数
+  response_delay_ms: 1000 # エージェントの応答前の最小遅延（人間が見やすいように）

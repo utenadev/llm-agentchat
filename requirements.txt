@@ -1,0 +1,6 @@
+llm
+llm-gemini
+fastapi
+uvicorn[standard]
+websockets
+PyYAML

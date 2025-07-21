@@ -1,0 +1,18 @@
+.aider*
+docs/*_tmpl.md
+docs/gitingest_simow_llm.md
+llm_agentchat.egg-info/
+*.msi
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
+# OS-specific files
+.DS_Store
+Thumbs.db
